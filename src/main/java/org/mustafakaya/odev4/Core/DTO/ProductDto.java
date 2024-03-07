@@ -1,7 +1,4 @@
-package org.mustafakaya.odev3.Core.DTO;
-
-import jakarta.persistence.*;
-
+package org.mustafakaya.odev4.Core.DTO;
 
 public class ProductDto {
     private Long id;

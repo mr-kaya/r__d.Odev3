@@ -1,4 +1,4 @@
-package org.mustafakaya.odev3.Repository;
+package org.mustafakaya.odev4.Repository;
 
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.jdbc.core.JdbcTemplate;

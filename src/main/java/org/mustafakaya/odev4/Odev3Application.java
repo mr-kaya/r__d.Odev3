@@ -1,4 +1,4 @@
-package org.mustafakaya.odev3;
+package org.mustafakaya.odev4;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

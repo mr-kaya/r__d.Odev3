@@ -1,6 +1,6 @@
-package org.mustafakaya.odev3.Core.Repositories;
+package org.mustafakaya.odev4.Core.Repositories;
 
-import org.mustafakaya.odev3.Core.Entity.ProductEntity;
+import org.mustafakaya.odev4.Core.Entity.ProductEntity;
 import org.springframework.stereotype.Repository;
 
 import java.util.List;
@@ -9,4 +9,5 @@ import java.util.List;
 public interface IProductRepository {
     List<ProductEntity> getAllProducts();
     List<ProductEntity> getProductsByCategory(String categoryName);
+    Long setProduct(ProductEntity productEntity);
 }

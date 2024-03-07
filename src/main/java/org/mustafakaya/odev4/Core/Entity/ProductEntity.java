@@ -1,4 +1,4 @@
-package org.mustafakaya.odev3.Core.Entity;
+package org.mustafakaya.odev4.Core.Entity;
 
 import jakarta.persistence.*;
 

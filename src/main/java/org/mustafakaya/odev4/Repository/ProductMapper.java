@@ -1,6 +1,6 @@
-package org.mustafakaya.odev3.Repository;
+package org.mustafakaya.odev4.Repository;
 
-import org.mustafakaya.odev3.Core.DTO.ProductDto;
+import org.mustafakaya.odev4.Core.DTO.ProductDto;
 import org.springframework.jdbc.core.RowMapper;
 
 import java.sql.ResultSet;

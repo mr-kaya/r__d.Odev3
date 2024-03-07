@@ -1,4 +1,4 @@
-package org.mustafakaya.odev3;
+package org.mustafakaya.odev4;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
