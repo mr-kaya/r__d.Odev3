@@ -1,20 +1,24 @@
-package org.mustafakaya.odev4.Core.DTO;
+package org.mustafakaya.odev5.Core.Entity;
 
-public class ProductDto {
-    private Long id;
+import jakarta.persistence.*;
+
+import java.io.Serializable;
+
+@Entity
+@Table(name = "Product")
+@Embeddable
+public class ProductEntity extends BaseEntity implements Serializable {
+    @Column(nullable = false)
     private String name;
+
+    @Column(nullable = false)
     private String category;
     private String photoUrl;
     private String description;
+
+    @Column(nullable = false)
     private Double price;
 
-    public Long getId() {
-        return id;
-    }
-
-    public void setId(Long id) {
-        this.id = id;
-    }
 
     public String getName() {
         return name;

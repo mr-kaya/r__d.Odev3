@@ -1,33 +1,12 @@
-package org.mustafakaya.odev4.Core.Entity;
+package org.mustafakaya.odev5.Core.DTO;
 
-import jakarta.persistence.*;
-
-@Entity
-@Table(name = "Products")
-public class ProductEntity {
-
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long id;
-
-    @Column(nullable = false)
+public class ProductDto {
     private String name;
-
-    @Column(nullable = false)
     private String category;
     private String photoUrl;
     private String description;
-
-    @Column(nullable = false)
     private Double price;
 
-    public Long getId() {
-        return id;
-    }
-
-    public void setId(Long id) {
-        this.id = id;
-    }
 
     public String getName() {
         return name;
