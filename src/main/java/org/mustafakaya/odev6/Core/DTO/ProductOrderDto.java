@@ -1,6 +1,6 @@
-package org.mustafakaya.odev5.Core.DTO;
+package org.mustafakaya.odev6.Core.DTO;
 
-public class OrderRequestDto {
+public class ProductOrderDto {
     private Long productId;
     private String orderDescription;
 

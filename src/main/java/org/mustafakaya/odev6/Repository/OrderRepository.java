@@ -1,7 +1,7 @@
-package org.mustafakaya.odev5.Repository;
+package org.mustafakaya.odev6.Repository;
 
 
-import org.mustafakaya.odev5.Core.Entity.OrderEntity;
+import org.mustafakaya.odev6.Core.Entity.OrderEntity;
 import org.springframework.data.repository.CrudRepository;
 import org.springframework.stereotype.Repository;
 

@@ -1,22 +1,10 @@
-package org.mustafakaya.odev5.Core.Entity;
+package org.mustafakaya.odev6.Core.DTO;
 
-import jakarta.persistence.*;
-
-import java.io.Serializable;
-
-@Entity
-@Table(name = "Product")
-@Embeddable
-public class ProductEntity extends BaseEntity implements Serializable {
-    @Column(nullable = false)
+public class ProductDto {
     private String name;
-
-    @Column(nullable = false)
     private String category;
     private String photoUrl;
     private String description;
-
-    @Column(nullable = false)
     private Double price;
 
 

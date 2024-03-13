@@ -1,13 +1,16 @@
-package org.mustafakaya.odev5.Service;
+package org.mustafakaya.odev6.Service;
 
-import org.mustafakaya.odev5.Core.DTO.OrderRequestDto;
-import org.mustafakaya.odev5.Core.Entity.OrderEntity;
-import org.mustafakaya.odev5.Core.Entity.OrderProductEntity;
-import org.mustafakaya.odev5.Core.Entity.ProductEntity;
-import org.mustafakaya.odev5.Core.Services.IOrderService;
-import org.mustafakaya.odev5.Repository.OrderProductRepository;
-import org.mustafakaya.odev5.Repository.OrderRepository;
-import org.mustafakaya.odev5.Repository.ProductRepository;
+import org.apache.coyote.BadRequestException;
+import org.mustafakaya.odev6.Core.DTO.OrderRequestDto;
+import org.mustafakaya.odev6.Core.Entity.OrderEntity;
+import org.mustafakaya.odev6.Core.Entity.OrderProductEntity;
+import org.mustafakaya.odev6.Core.Entity.ProductEntity;
+import org.mustafakaya.odev6.Core.Services.IOrderService;
+import org.mustafakaya.odev6.Repository.OrderProductRepository;
+import org.mustafakaya.odev6.Repository.OrderRepository;
+import org.mustafakaya.odev6.Repository.ProductRepository;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
 
 @Service
@@ -40,5 +43,11 @@ public class OrderService implements IOrderService {
 
         _orderProductRepository.save(orderProductEntity);
 
+    }
+
+    @Override
+    public void deleteOrderById(Long id) {
+        _orderProductRepository.deleteById(id);
+        _orderRepository.deleteById(id);
     }
 }

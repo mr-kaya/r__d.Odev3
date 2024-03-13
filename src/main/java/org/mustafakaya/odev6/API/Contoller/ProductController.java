@@ -1,7 +1,7 @@
-package org.mustafakaya.odev5.API.Contoller;
+package org.mustafakaya.odev6.API.Contoller;
 
-import org.mustafakaya.odev5.Core.DTO.ProductDto;
-import org.mustafakaya.odev5.Core.Services.IProductService;
+import org.mustafakaya.odev6.Core.DTO.ProductDto;
+import org.mustafakaya.odev6.Core.Services.IProductService;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;

@@ -1,9 +1,9 @@
-package org.mustafakaya.odev5.Service;
+package org.mustafakaya.odev6.Service;
 
-import org.mustafakaya.odev5.Core.DTO.ProductDto;
-import org.mustafakaya.odev5.Core.Entity.ProductEntity;
-import org.mustafakaya.odev5.Core.Services.IProductService;
-import org.mustafakaya.odev5.Repository.ProductRepository;
+import org.mustafakaya.odev6.Core.DTO.ProductDto;
+import org.mustafakaya.odev6.Core.Entity.ProductEntity;
+import org.mustafakaya.odev6.Core.Services.IProductService;
+import org.mustafakaya.odev6.Repository.ProductRepository;
 import org.springframework.stereotype.Service;
 
 import java.util.ArrayList;

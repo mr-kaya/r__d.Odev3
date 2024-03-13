@@ -1,7 +1,7 @@
-package org.mustafakaya.odev5.Core.Services;
+package org.mustafakaya.odev6.Core.Services;
 
-import org.mustafakaya.odev5.Core.DTO.ProductDto;
-import org.mustafakaya.odev5.Core.Entity.ProductEntity;
+import org.mustafakaya.odev6.Core.DTO.ProductDto;
+import org.mustafakaya.odev6.Core.Entity.ProductEntity;
 import org.springframework.stereotype.Service;
 
 import java.util.List;

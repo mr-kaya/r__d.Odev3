@@ -1,10 +1,11 @@
-package org.mustafakaya.odev5.Core.Services;
+package org.mustafakaya.odev6.Core.Services;
 
-import org.mustafakaya.odev5.Core.DTO.OrderRequestDto;
+import org.mustafakaya.odev6.Core.DTO.OrderRequestDto;
 import org.springframework.stereotype.Service;
 
 @Service
 public interface IOrderService {
     void saveOrder(OrderRequestDto orderRequestDto);
+    void deleteOrderById(Long id);
 }
 

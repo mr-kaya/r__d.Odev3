@@ -1,6 +1,6 @@
-package org.mustafakaya.odev5.Repository;
+package org.mustafakaya.odev6.Repository;
 
-import org.mustafakaya.odev5.Core.Entity.ProductEntity;
+import org.mustafakaya.odev6.Core.Entity.ProductEntity;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.CrudRepository;
 import org.springframework.stereotype.Repository;

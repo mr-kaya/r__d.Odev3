@@ -1,12 +1,10 @@
-package org.mustafakaya.odev5.Core.Entity;
+package org.mustafakaya.odev6.Core.Entity;
 
 import jakarta.persistence.*;
 import org.hibernate.annotations.CreationTimestamp;
 
 import java.io.Serializable;
 import java.util.Date;
-import java.util.HashSet;
-import java.util.Set;
 
 @Table(name = "orders")
 @Entity
@@ -21,9 +19,6 @@ public class OrderEntity extends BaseEntity implements Serializable {
     private Date orderDate;
     private String orderDescription;
     private Double totalAmount;
-
-    @OneToMany(mappedBy = "orderEntity", cascade = CascadeType.ALL)
-    private Set<OrderProductEntity> orderProductEntity = new HashSet<>();
 
     public String getOrderNumber() {
         return orderNumber;

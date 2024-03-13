@@ -1,7 +1,7 @@
-package org.mustafakaya.odev5.API.Contoller;
+package org.mustafakaya.odev6.API.Contoller;
 
-import org.mustafakaya.odev5.Core.DTO.OrderRequestDto;
-import org.mustafakaya.odev5.Core.Services.IOrderService;
+import org.mustafakaya.odev6.Core.DTO.OrderRequestDto;
+import org.mustafakaya.odev6.Core.Services.IOrderService;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
@@ -28,5 +28,11 @@ public class OrderController {
         _orderService.saveOrder(orderRequestDto);
 
         return new ResponseEntity<>("Kayıt işlemi başarılı.", HttpStatus.CREATED);
+    }
+
+    @DeleteMapping
+    public ResponseEntity<String> deleteOrder(@RequestParam Long id) {
+        _orderService.deleteOrderById(id);
+        return new ResponseEntity<>("Kayıt başarı ile silindi.", HttpStatus.OK);
     }
 }
